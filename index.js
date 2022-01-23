@@ -39,7 +39,7 @@ const tarotDeck = {
   deck: [
     // TESTS
     // new MajorArcana('fake', 'for testing', 'majo', false, 'string', [9, 8, true, 10.5, { a: 'b' }])
-    // new MinorArcana('fake', 'for testing', 'minor', false, ['string'], ['string']),
+    new MinorArcana('fake', 'for testing', 'minor', false, ['string'], ['string']),
 
     // MAJOR ARCANA
     new MajorArcana('O', 'The Fool', 'major', false, ['innocence', 'new beginnings', 'free spirit'], ['recklessness', 'taken advantage of', 'inconsideration']), 

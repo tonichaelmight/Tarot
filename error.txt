@@ -1,0 +1,1 @@
+Invalid value for suit at index 0. Should be one of the following: ['Cups', 'Pentacles', 'Swords', 'Wands']

@@ -72,14 +72,14 @@ for (const i in parsedTarotDeck.deck) {
         throw new Error(`Missing ${prop} property at index ${i}`);
       }
     }
-  }
 
-  if (typeof card.rank !== 'string') {
-    logErrorToFile(`Invalid value for rank at index ${i}. Should be a string`);
-  }
-
-  if (!['Cups', 'Pentacles', 'Swords', 'Wands'].includes(card.suit)) {
-    logErrorToFile(`Invalid value for suit at index ${i}. Should be a string`);
+    if (typeof card.rank !== 'string') {
+      logErrorToFile(`Invalid value for rank at index ${i}. Should be a string`);
+    }
+  
+    if (!['Cups', 'Pentacles', 'Swords', 'Wands'].includes(card.suit)) {
+      logErrorToFile(`Invalid value for suit at index ${i}. Should be one of the following: ['Cups', 'Pentacles', 'Swords', 'Wands']`);
+    }
   }
 
 
