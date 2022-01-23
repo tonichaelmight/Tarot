@@ -37,6 +37,10 @@ class MinorArcana extends Card {
 const tarotDeck = {
   // deck - array of Card objects; this is probably what will actually get written to file
   deck: [
+    // TESTS
+    // new MajorArcana('fake', 'for testing', 'majo', false, 'string', [9, 8, true, 10.5, { a: 'b' }])
+    // new MinorArcana('fake', 'for testing', 'minor', false, ['string'], ['string']),
+
     // MAJOR ARCANA
     new MajorArcana('O', 'The Fool', 'major', false, ['innocence', 'new beginnings', 'free spirit'], ['recklessness', 'taken advantage of', 'inconsideration']), 
 
@@ -82,7 +86,10 @@ const tarotDeck = {
 
     new MajorArcana('XXI', 'The World', 'major', false, ['fulfillment', 'harmony', 'completion'], ['incompletion', 'no closure']),
 
-    new MajorArcana('fake', 'for testing', 'major', false, 'string', 'string')
+    // CUPS
+    new MinorArcana('Ace', 'Cups', 'minor', false, ['new feelings', 'spirituality', 'intuition'], ['imbalance', 'broken communication', 'tension']),
+
+
   ]
 }
 
