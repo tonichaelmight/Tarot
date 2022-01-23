@@ -39,7 +39,7 @@ const tarotDeck = {
   deck: [
     // TESTS
     // new MajorArcana('fake', 'for testing', 'majo', false, 'string', [9, 8, true, 10.5, { a: 'b' }])
-    new MinorArcana('fake', 'for testing', 'minor', false, ['string'], ['string']),
+    // new MinorArcana('fake', 'Cups', 'minor', false, ['string'], ['string']),
 
     // MAJOR ARCANA
     new MajorArcana('O', 'The Fool', 'major', false, ['innocence', 'new beginnings', 'free spirit'], ['recklessness', 'taken advantage of', 'inconsideration']), 
@@ -89,6 +89,126 @@ const tarotDeck = {
     // CUPS
     new MinorArcana('Ace', 'Cups', 'minor', false, ['new feelings', 'spirituality', 'intuition'], ['imbalance', 'broken communication', 'tension']),
 
+    new MinorArcana('One', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Two', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Three', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Four', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Five', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Six', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Seven', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Eight', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Nine', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Ten', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Page', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Knight', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('Queen', 'Cups', 'minor', false, [], []),
+
+    new MinorArcana('King', 'Cups', 'minor', false, [], []),
+
+    // PENTACLES
+    new MinorArcana('Ace', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('One', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Two', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Three', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Four', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Five', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Six', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Seven', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Eight', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Nine', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Ten', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Page', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Knight', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('Queen', 'Pentacles', 'minor', false, [], []),
+
+    new MinorArcana('King', 'Pentacles', 'minor', false, [], []),
+
+    // SWORDS 
+    new MinorArcana('Ace', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('One', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Two', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Three', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Four', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Five', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Six', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Seven', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Eight', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Nine', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Ten', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Page', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Knight', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('Queen', 'Swords', 'minor', false, [], []),
+
+    new MinorArcana('King', 'Swords', 'minor', false, [], []),
+
+    // WANDS 
+    new MinorArcana('Ace', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('One', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Two', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Three', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Four', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Five', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Six', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Seven', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Eight', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Nine', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Ten', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Page', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Knight', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('Queen', 'Wands', 'minor', false, [], []),
+
+    new MinorArcana('King', 'Wands', 'minor', false, [], []),
 
   ]
 }
@@ -99,6 +219,7 @@ const tarotDeck = {
 fs.writeFileSync('deck.json', JSON.stringify(tarotDeck));
 
 const rawTarotDeck = fs.readFileSync('deck.json');
+// this variable is exported to use for testing in test.js
 const parsedTarotDeck = JSON.parse(rawTarotDeck);
 
 // console.log(parsedTarotDeck.deck);

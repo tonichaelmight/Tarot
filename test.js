@@ -33,6 +33,9 @@ for (const i in parsedTarotDeck.deck) {
   if (!Array.isArray(card.uprightMeaning)) {
     logErrorToFile(`Invalid value for unprightMeaning at index ${i}. Should be an array of strings`);
   } else {
+    if (card.uprightMeaning.length < 2) {
+      logErrorToFile(`uprightMeaning has ${card.uprightMeaning.length} elements; should have at least 2`);
+    }
     for (const meaning of card.uprightMeaning) {
       if (typeof meaning !== 'string') {
         logErrorToFile(`Invalid value in the uprightMeaning array at index ${i}. This array should contain string values`);
@@ -43,6 +46,9 @@ for (const i in parsedTarotDeck.deck) {
   if (!Array.isArray(card.reversedMeaning)) {
     logErrorToFile(`Invalid value for reversedMeaning at index ${i}. Should be an array of strings`);
   } else {
+    if (card.reversedMeaning.length < 2) {
+      logErrorToFile(`reversedMeaning has ${card.reversedMeaning.length} elements; should have at least 2`);
+    }
     for (const meaning of card.reversedMeaning) {
       if (typeof meaning !== 'string') {
         logErrorToFile(`Invalid value in the reversedMeaning array at index ${i}. This array should contain string values`);
