@@ -6,8 +6,11 @@ const cardProps = ['type', 'reversed', 'uprightMeaning', 'reversedMeaning'];
 const majorProps = ['numeral', 'name'];
 const minorProps = ['suit', 'rank'];
 
+let errors = false;
+
 const logErrorToFile = message => {
   fs.appendFileSync('error.txt', `${message}\n`);
+  errors = true;
 };
 
 fs.writeFileSync('error.txt', '');
@@ -17,7 +20,7 @@ if (tarotDeck.deck.length !== 78) {
   throw new Error(`Incorrect total number of cards in the deck. There are ${tarotDeck.deck.length}, but there should be 78`);
 }
 
-// examine each card
+// examine each card for properties
 for (const i in tarotDeck.deck) {
   
   const card = tarotDeck.deck[i];
@@ -99,3 +102,8 @@ for (const i in tarotDeck.deck) {
 }
 
 
+if (!errors) {
+  logErrorToFile('No errors found')
+}
+
+logErrorToFile('End of test suite');
