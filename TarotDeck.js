@@ -36,6 +36,7 @@ class TarotDeck {
 
   reorderDeck() {
     console.log('Reordering Deck...');
+    //perhaps change to use the .json file instead
     this.deck = orderedTarotDeck._deck;
     this.saveDeck();
   }
