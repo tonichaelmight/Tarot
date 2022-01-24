@@ -1,6 +1,6 @@
 const assert = require('assert');
 const fs = require('fs');
-const { parsedTarotDeck } = require('./index.js');
+const { tarotDeck } = require('./index.js');
 
 const cardProps = ['type', 'reversed', 'uprightMeaning', 'reversedMeaning'];
 const majorProps = ['numeral', 'name'];
@@ -13,14 +13,14 @@ const logErrorToFile = message => {
 fs.writeFileSync('error.txt', '');
 
 // deck should have 78 cards
-if (parsedTarotDeck.deck.length !== 78) {
-  throw new Error(`Incorrect total number of cards in the deck. There are ${parsedTarotDeck.deck.length}, but there should be 78`);
+if (tarotDeck.deck.length !== 78) {
+  throw new Error(`Incorrect total number of cards in the deck. There are ${tarotDeck.deck.length}, but there should be 78`);
 }
 
 // examine each card
-for (const i in parsedTarotDeck.deck) {
+for (const i in tarotDeck.deck) {
   
-  const card = parsedTarotDeck.deck[i];
+  const card = tarotDeck.deck[i];
 
   // checks for the properties all cards should have; throws an error if one is missing
   for (const prop of cardProps) {
