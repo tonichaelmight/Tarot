@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "index.js": "0.0.3"
+    "index.js": "0.0.3",
+    "prompt": "^1.2.1"
   }
 }

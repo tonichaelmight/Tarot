@@ -1,6 +1,8 @@
+const { MajorArcana, MinorArcana } = require('./Card');
+
 const orderedTarotDeck = {
     // deck - array of Card objects; this is probably what will actually get written to file
-    deck: [
+    _deck: [
       // TESTS
       // new MajorArcana('fake', 'for testing', 'majo', false, 'string', [9, 8, true, 10.5, { a: 'b' }])
       // new MinorArcana('fake', 'Cups', 'minor', false, ['string'], ['string']),
@@ -168,3 +170,5 @@ const orderedTarotDeck = {
   
     ]
   }
+
+  module.exports = { orderedTarotDeck };

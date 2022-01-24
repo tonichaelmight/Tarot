@@ -1,6 +1,6 @@
-const assert = require('assert');
 const fs = require('fs');
-const { tarotDeck } = require('./index.js');
+const readline = require('readline');
+const { tarotDeck } = require('./TarotDeck.js');
 
 const cardProps = ['type', 'reversed', 'uprightMeaning', 'reversedMeaning'];
 const majorProps = ['numeral', 'name'];
@@ -100,6 +100,64 @@ for (const i in tarotDeck.deck) {
 
 
 }
+
+let choice = 0;
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+const ask = () => {
+  rl.question(
+`\n\n1. Draw Card
+2. Shuffle Deck
+3. Reorder Deck
+
+-1. Exit
+
+> `,
+    (num) => {
+      choice = num;
+  
+      switch (choice) {
+        case '1':
+          tarotDeck.drawCard();
+          ask();
+          break;
+        case '2':
+          // probably change to be like 3-5 times
+          tarotDeck.shuffleDeck();
+          ask();
+          break;
+        case '3':
+          tarotDeck.reorderDeck();
+          ask();
+          break;
+        case '-1':
+          rl.close();
+          break;
+        default: 
+          console.log('Invalid choice\n');
+          ask();
+          break;
+      }
+    }
+  );
+}
+
+ask();
+  
+
+// if (card2.type === 'major') {
+//   fs.appendFileSync('stats.txt', `${card2.numeral} ${card2.name} ${card2.reversed ? 'Reversed' : ''}\n`);
+// } else {
+//   fs.appendFileSync('stats.txt', `${card2.rank} of ${card2.suit}\n`);
+// }
+// fs.writeFileSync('output.txt', '');
+// fs.appendFileSync('output.txt', JSON.stringify(tarotDeck));
+
+// fs.writeFileSync('deck.json', JSON.stringify(tarotDeck));
 
 
 if (!errors) {

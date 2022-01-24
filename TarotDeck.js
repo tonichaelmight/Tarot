@@ -1,5 +1,6 @@
 const fs = require('fs');
-const { flipCoin } = require('./helpers')
+const { flipCoin } = require('./helpers');
+const { orderedTarotDeck } = require('./orderedDeck')
 
 const { MajorArcana, MinorArcana } = require('./Card');
 
@@ -30,15 +31,30 @@ class TarotDeck {
         }
       }
     }
+    //console.log(this.deck);
+  }
+
+  reorderDeck() {
+    console.log('Reordering Deck...');
+    this.deck = orderedTarotDeck._deck;
+    this.saveDeck();
+  }
+
+  saveDeck() {
+    fs.writeFileSync('deck.json', JSON.stringify(this));
+    console.log('Deck saved');
   }
 
   drawCard() {
     const card = this.deck.shift();
     this.deck.push(card);
-    return card;
+    this.saveDeck();
+    console.log('Here is your card: ');
+    console.log(card);
   }
 
   shuffleDeck() {
+    console.log('Shuffling deck...')
     const shuffled = [];
 
     const midpoint = Math.floor(this.deck.length / 2);
@@ -52,7 +68,7 @@ class TarotDeck {
     }
 
     if (flipCoin()) {
-      half2.forEach(card => console.log(card))
+      half2.forEach(card => card.reverse())
     }
 
     for (let i = 0; i < half1.length; i++) {
@@ -64,6 +80,8 @@ class TarotDeck {
     }
 
     this.deck = shuffled;
+    console.log('Shuffled');
+    this.saveDeck();
   }
 
 }
@@ -74,13 +92,6 @@ const rawTarotDeck = fs.readFileSync('deck.json');
 const parsedTarotDeck = JSON.parse(rawTarotDeck);
 
 const tarotDeck = new TarotDeck(parsedTarotDeck);
-tarotDeck.shuffleDeck();
 
-const card = tarotDeck.drawCard();
-console.log(card);
-fs.writeFileSync('output.txt', '');
-fs.appendFileSync('output.txt', JSON.stringify(tarotDeck));
-
-// fs.writeFileSync('deck.json', JSON.stringify(tarotDeck));
 
 module.exports = { tarotDeck };
