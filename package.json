@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "index.js": "0.0.3",
-    "prompt": "^1.2.1"
+    "prompt": "^1.2.1",
+    "prompt-sync": "^4.1.6"
   }
 }
