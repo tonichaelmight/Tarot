@@ -87,128 +87,120 @@ const tarotDeck = {
     new MajorArcana('XXI', 'The World', 'major', false, ['fulfillment', 'harmony', 'completion'], ['incompletion', 'no closure']),
 
     // CUPS
-    new MinorArcana('Ace', 'Cups', 'minor', false, ['new feelings', 'spirituality', 'intuition'], ['imbalance', 'broken communication', 'tension']),
+    new MinorArcana('Ace', 'Cups', 'minor', false, ['new feelings', 'spirituality', 'intuition'], ['emotional loss', 'blocked creativity', 'emptiness']),
 
-    new MinorArcana('One', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Two', 'Cups', 'minor', false, ['unity', 'partnership', 'connection'], ['imbalance', 'broken communication', 'tension']),
 
-    new MinorArcana('Two', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Three', 'Cups', 'minor', false, ['friendship', 'community', 'happiness'], ['overindulgence', 'gossip', 'isolation']),
 
-    new MinorArcana('Three', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Four', 'Cups', 'minor', false, ['apathy', 'contemplation', 'disconnectedness'], ['sudden awareness', 'choosing happiness', 'acceptance']),
 
-    new MinorArcana('Four', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Five', 'Cups', 'minor', false, ['loss', 'grief', 'self-pity'], ['acceptance', 'moving on', 'finding peace']),
 
-    new MinorArcana('Five', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Six', 'Cups', 'minor', false, ['familiarity', 'happy memories', 'healing'], ['moving forward', 'leaving home', 'independence']),
 
-    new MinorArcana('Six', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Seven', 'Cups', 'minor', false, ['searching for purpose', 'choices', 'daydreaming'], ['lack of purpose', 'diversion', 'confusion']),
 
-    new MinorArcana('Seven', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Eight', 'Cups', 'minor', false, ['walking away', 'disillusionment', 'leaving behind'], ['avoidance', 'fear of change', 'fear of loss']),
 
-    new MinorArcana('Eight', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Nine', 'Cups', 'minor', false, ['satisfaction', 'emotional stability', 'luxury'], ['lack of inner joy', 'smugness', 'dissatisfaction']),
 
-    new MinorArcana('Nine', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Ten', 'Cups', 'minor', false, ['inner happiness', 'fulfillment', 'dreams coming true'], ['shattered dreams', 'broken family', 'domestic disharmony']),
 
-    new MinorArcana('Ten', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Page', 'Cups', 'minor', false, ['happy surprise', 'dreamer', 'sensitivity'], ['emotional immaturity', 'insecurity', 'disappointment']),
 
-    new MinorArcana('Page', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Knight', 'Cups', 'minor', false, ['following the heart', 'idealist', 'romantic'], ['moodiness', 'disappointment']),
 
-    new MinorArcana('Knight', 'Cups', 'minor', false, [], []),
+    new MinorArcana('Queen', 'Cups', 'minor', false, ['compassion', 'calm', 'comfort'], ['martyrdom', 'insecurity', 'dependence']),
 
-    new MinorArcana('Queen', 'Cups', 'minor', false, [], []),
-
-    new MinorArcana('King', 'Cups', 'minor', false, [], []),
+    new MinorArcana('King', 'Cups', 'minor', false, ['compassion', 'control', 'balance'], ['coldness', 'moodiness', 'bad advice']),
 
     // PENTACLES
-    new MinorArcana('Ace', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Ace', 'Pentacles', 'minor', false, ['opportunity', 'prosperity', 'new venture'], ['lost opportunity', 'missed chance', 'bad investment']),
 
-    new MinorArcana('One', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Two', 'Pentacles', 'minor', false, ['balancing decisions', 'priorities', 'adapting to change'], ['loss of balance', 'disorganized', 'overwhelmed']),
 
-    new MinorArcana('Two', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Three', 'Pentacles', 'minor', false, ['teamwork', 'collaboration', 'building'], ['lack of teamwork', 'disorganized', 'group conflict']),
 
-    new MinorArcana('Three', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Four', 'Pentacles', 'minor', false, ['conservation', 'frugality', 'security'], ['greediness', 'stinginess', 'possessiveness']),
 
-    new MinorArcana('Four', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Five', 'Pentacles', 'minor', false, ['need', 'poverty', 'insecurity'], ['recovery', 'charity', 'improvement']),
 
-    new MinorArcana('Five', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Six', 'Pentacles', 'minor', false, ['charity', 'generosity', 'sharing'], ['strings attached', 'stinginess', 'power and domination']),
 
-    new MinorArcana('Six', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Seven', 'Pentacles', 'minor', false, ['hard work', 'perseverance', 'diligence'], ['work without results', 'distractions', 'lack of rewards']),
 
-    new MinorArcana('Seven', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Eight', 'Pentacles', 'minor', false, ['apprenticeship', 'passion', 'high standards'], ['lack of passion', 'uninspired', 'no motivation']),
 
-    new MinorArcana('Eight', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Nine', 'Pentacles', 'minor', false, ['fruits of labor', 'rewards', 'luxury'], ['reckless spending', 'living beyond means', 'false success']),
 
-    new MinorArcana('Nine', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Ten', 'Pentacles', 'minor', false, ['legacy', 'culmination', 'inheritance'], ['fleeting success', 'lack of stability', 'lack of resources']),
 
-    new MinorArcana('Ten', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Page', 'Pentacles', 'minor', false, ['ambition', 'desire', 'diligence'], ['lack of commitment', 'greediness', 'laziness']),
 
-    new MinorArcana('Page', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Knight', 'Pentacles', 'minor', false, ['efficiency', 'hard work', 'responsibility'], ['laziness', 'obsessiveness', 'work without reward']),
 
-    new MinorArcana('Knight', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('Queen', 'Pentacles', 'minor', false, ['practicality', 'creature comforts', 'financial security'], ['self-centeredness', 'jealousy', 'smothering']),
 
-    new MinorArcana('Queen', 'Pentacles', 'minor', false, [], []),
-
-    new MinorArcana('King', 'Pentacles', 'minor', false, [], []),
+    new MinorArcana('King', 'Pentacles', 'minor', false, ['abundance', 'prosperity', 'security'], ['greed', 'indulgence', 'sensuality']),
 
     // SWORDS 
-    new MinorArcana('Ace', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Ace', 'Swords', 'minor', false, ['breakthrough', 'clarity', 'sharp mind'], ['confusion', 'brutality', 'chaos']),
 
-    new MinorArcana('One', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Two', 'Swords', 'minor', false, ['difficult choices', 'indecision', 'stalemate'], ['lesser of two evils', 'no right choice', 'confusion']),
 
-    new MinorArcana('Two', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Three', 'Swords', 'minor', false, ['heartbreak', 'suffering', 'grief'], ['recovery', 'forgiveness', 'moving on']),
 
-    new MinorArcana('Three', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Four', 'Swords', 'minor', false, ['rest', 'restoration', 'contemplation'], ['restlessness', 'burnout', 'stress']),
 
-    new MinorArcana('Four', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Five', 'Swords', 'minor', false, ['unbridled ambition', 'win at all costs', 'sneakiness'], ['lingering resentment', 'desire to reconcile', 'forgiveness']),
 
-    new MinorArcana('Five', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Six', 'Swords', 'minor', false, ['transition', 'leaving behind', 'moving on'], ['emotional baggage', 'unresolved issues', 'resisting transition']),
 
-    new MinorArcana('Six', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Seven', 'Swords', 'minor', false, ['deception', 'trickery', 'tactics and strategy'], ['coming clean', 'rethinking approach', 'deception']),
 
-    new MinorArcana('Seven', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Eight', 'Swords', 'minor', false, ['imprisonment', 'entrapment', 'self-victimization'], ['self acceptance', 'new perspective', 'freedom']),
 
-    new MinorArcana('Eight', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Nine', 'Swords', 'minor', false, ['anxiety', 'hopelessness', 'trauma'], ['hope', 'reaching out', 'despair']),
 
-    new MinorArcana('Nine', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Ten', 'Swords', 'minor', false, ['failure', 'collapse', 'defeat'], ["can't get worse", 'only upwards', 'inevitable end']),
 
-    new MinorArcana('Ten', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Page', 'Swords', 'minor', false, ['curiosity', 'restlessness', 'mental energy'], ['deception', 'manipulation', 'all talk']),
 
-    new MinorArcana('Page', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Knight', 'Swords', 'minor', false, ['action', 'impulsiveness', 'defending beliefs'], ['no direction', 'disregard for consequences', 'unpredictability']),
 
-    new MinorArcana('Knight', 'Swords', 'minor', false, [], []),
+    new MinorArcana('Queen', 'Swords', 'minor', false, ['complexity', 'perceptiveness', 'clear mindedness'], ['cold hearted', 'cruel', 'bitterness']),
 
-    new MinorArcana('Queen', 'Swords', 'minor', false, [], []),
-
-    new MinorArcana('King', 'Swords', 'minor', false, [], []),
+    new MinorArcana('King', 'Swords', 'minor', false, ['head over heart', 'discipline', 'truth'], ['manipulative', 'cruel', 'weakness']),
 
     // WANDS 
-    new MinorArcana('Ace', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Ace', 'Wands', 'minor', false, ['creation', 'willpower', 'inspiration', 'desire'], ['lack of energy', 'lack of passion', 'boredom']),
 
-    new MinorArcana('One', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Two', 'Wands', 'minor', false, ['planning', 'making decisions', 'leaving home'], ['fear of change', 'playing safe', 'bad planning']),
 
-    new MinorArcana('Two', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Three', 'Wands', 'minor', false, ['looking ahead', 'expansion', 'rapid growth'], ['obstacles', 'delays', 'frustration']),
 
-    new MinorArcana('Three', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Four', 'Wands', 'minor', false, ['community', 'home', 'celebration'], ['lack of support', 'transience', 'home conflicts']),
 
-    new MinorArcana('Four', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Five', 'Wands', 'minor', false, ['competition', 'rivalry', 'conflict'], ['avoiding conflict', 'respecting differences']),
 
-    new MinorArcana('Five', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Six', 'Wands', 'minor', false, ['victory', 'success', 'public reward'], ['excess pride', 'lack of recognition', 'punishment']),
 
-    new MinorArcana('Six', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Seven', 'Wands', 'minor', false, ['perseverance', 'defensive', 'maintaining control'], ['give up', 'destroyed confidence', 'overwhelmed']),
 
-    new MinorArcana('Seven', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Eight', 'Wands', 'minor', false, ['rapid action', 'movement', 'quick decisions'], ['panic', 'waiting', 'slowdown']),
 
-    new MinorArcana('Eight', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Nine', 'Wands', 'minor', false, ['resilience', 'grit', 'last stand'], ['exhaustion', 'fatigue', 'questioning motivations']),
 
-    new MinorArcana('Nine', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Ten', 'Wands', 'minor', false, ['accomplishment', 'responsibility', 'burden'], ['inability to delegate', 'overstressed', 'burnt out']),
 
-    new MinorArcana('Ten', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Page', 'Wands', 'minor', false, ['exploration', 'excitement', 'freedom'], ['lack of direction', 'procrastination', 'creating conflict']),
 
-    new MinorArcana('Page', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Knight', 'Wands', 'minor', false, ['action', 'adventure', 'fearlessness'], ['anger', 'impulsiveness', 'recklessness']),
 
-    new MinorArcana('Knight', 'Wands', 'minor', false, [], []),
+    new MinorArcana('Queen', 'Wands', 'minor', false, ['courage', 'determination', 'joy'], ['selfishness', 'jealousy', 'insecurities']),
 
-    new MinorArcana('Queen', 'Wands', 'minor', false, [], []),
-
-    new MinorArcana('King', 'Wands', 'minor', false, [], []),
+    new MinorArcana('King', 'Wands', 'minor', false, ['big picture', 'leader', 'overcoming challenges'], ['impulsive', 'overbearing', 'unachievable expectations']),
 
   ]
 }
@@ -222,6 +214,6 @@ const rawTarotDeck = fs.readFileSync('deck.json');
 // this variable is exported to use for testing in test.js
 const parsedTarotDeck = JSON.parse(rawTarotDeck);
 
-// console.log(parsedTarotDeck.deck);
+// console.log(parsedTarotDeck);
 
 module.exports = { parsedTarotDeck };

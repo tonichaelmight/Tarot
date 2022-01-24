@@ -12,10 +12,17 @@ const logErrorToFile = message => {
 
 fs.writeFileSync('error.txt', '');
 
+// deck should have 78 cards
+if (parsedTarotDeck.deck.length !== 78) {
+  throw new Error(`Incorrect total number of cards in the deck. There are ${parsedTarotDeck.deck.length}, but there should be 78`);
+}
+
+// examine each card
 for (const i in parsedTarotDeck.deck) {
   
   const card = parsedTarotDeck.deck[i];
 
+  // checks for the properties all cards should have; throws an error if one is missing
   for (const prop of cardProps) {
     if (!prop in card) {
       throw new Error(`Missing ${prop} property at index ${i}`);
@@ -34,7 +41,7 @@ for (const i in parsedTarotDeck.deck) {
     logErrorToFile(`Invalid value for unprightMeaning at index ${i}. Should be an array of strings`);
   } else {
     if (card.uprightMeaning.length < 2) {
-      logErrorToFile(`uprightMeaning has ${card.uprightMeaning.length} elements; should have at least 2`);
+      logErrorToFile(`uprightMeaning has ${card.uprightMeaning.length} elements at index ${i}; should have at least 2`);
     }
     for (const meaning of card.uprightMeaning) {
       if (typeof meaning !== 'string') {
@@ -47,7 +54,7 @@ for (const i in parsedTarotDeck.deck) {
     logErrorToFile(`Invalid value for reversedMeaning at index ${i}. Should be an array of strings`);
   } else {
     if (card.reversedMeaning.length < 2) {
-      logErrorToFile(`reversedMeaning has ${card.reversedMeaning.length} elements; should have at least 2`);
+      logErrorToFile(`reversedMeaning has ${card.reversedMeaning.length} elements at index ${i}; should have at least 2`);
     }
     for (const meaning of card.reversedMeaning) {
       if (typeof meaning !== 'string') {
