@@ -1,5 +1,7 @@
 const fs = require('fs');
-const readline = require('readline');
+// const readline = require('readline');
+const prompt = require('prompt-sync')();
+const { flipCoin } = require('./helpers');
 const { tarotDeck } = require('./TarotDeck.js');
 
 const cardProps = ['type', 'reversed', 'uprightMeaning', 'reversedMeaning'];
@@ -103,50 +105,97 @@ for (const i in tarotDeck.deck) {
 
 let choice = 0;
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
-const ask = () => {
-  rl.question(
-`\n\n1. Draw Card
-2. Shuffle Deck
-3. Reorder Deck
+// const ask = () => {
+//   rl.question(
+// `\n\n1. Draw Card
+// 2. Shuffle Deck
+// 3. Reorder Deck
 
--1. Exit
+// -1. Exit
 
-> `,
-    (num) => {
-      choice = num;
+// > `,
+//     (num) => {
+//       choice = num;
   
-      switch (choice) {
-        case '1':
-          tarotDeck.drawCard();
-          ask();
-          break;
-        case '2':
-          // probably change to be like 3-5 times
-          tarotDeck.shuffleDeck();
-          ask();
-          break;
-        case '3':
-          tarotDeck.reorderDeck();
-          ask();
-          break;
-        case '-1':
-          rl.close();
-          break;
-        default: 
-          console.log('Invalid choice\n');
-          ask();
-          break;
-      }
-    }
-  );
+//       switch (choice) {
+//         case '1':
+//           tarotDeck.drawCard();
+//           ask();
+//           break;
+//         case '2':
+//           // probably change to be like 3-5 times
+//           tarotDeck.shuffleDeck();
+//           ask();
+//           break;
+//         case '3':
+//           tarotDeck.reorderDeck();
+//           ask();
+//           break;
+//         case '-1':
+//           rl.close();
+//           break;
+//         default: 
+//           console.log('Invalid choice\n');
+//           ask();
+//           break;
+//       }
+//     }
+//   );
+// }
+
+const getInput = () => {
+  const result = prompt('\n\n1. Draw Card\n2. Shuffle Deck\n3. Reorder Deck\n\n-1. Exit\n\n> ', '-1');
+  return result;
 }
 
-ask();
+const processInput = () => {
+  switch (choice) {
+    case '1':
+      tarotDeck.drawCard();
+      break;
+
+    case '2':
+      // probably change to be like 3-5 times
+      let count = 0
+      for (let i = 0; i < 7 && count < 5; i++) {
+        if (flipCoin()) {
+          count++;
+          tarotDeck.shuffleDeck();
+        }
+      }
+
+      while (count < 2) {
+        count++;
+        tarotDeck.shuffleDeck();
+      }
+
+      break;
+
+    case '3':
+      tarotDeck.reorderDeck();
+      break;
+
+    case '-1':
+      console.log("Bye bye!")
+      break;
+
+    default: 
+      console.log('Invalid choice\n');
+      break;
+  }
+};
+
+while (choice !== '-1') {
+  choice = getInput();
+  processInput();
+}
+
+
   
 
 // if (card2.type === 'major') {
